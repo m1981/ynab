@@ -12,4 +12,3 @@ Data ksigowania;Data transakcji;Nadawca;Odbiorca;Tytu patnoci (linia 1);Tytu pat
 20171003;20171003;"Micha� Nakiewicz ";"Justyna Mulewska ";"Zwrot za czynsz";"";"";"";"Zlecenie sta�e";-1500,00;"PLN";"9795,33"
 20171107;20171104;"Micha� Nakiewicz ";" ";"Transakcja kart� debetow�;obci��enie 92.87 PLN z dnia:2017-11-04 Kod MCC 5411  POL,WROCLAW JMP S.A. BIEDRONKA 482";"";"";"";"Transakcja kart� debetow�";-92,87;"PLN";"-665,09"
 20180115;20180115;"KRYZE AMADEUSZ ZYGMUNT STARYNOWSKA 22";"Michał Nakiewicz ";"Pizza";"";"";"";"Przelew krajowy";115,00;"PLN";"3186,22"
-20180315;20180313;" ";" ";"14669675 Transakcja kartą debetową z CashBack 5575 XXXX XXXX 3405 1-MINUTE Wroclaw POL 51.35 PLN 20180313 w tym CashBack:50 PLN Kurs wymiany:  Kwota w walucie rozliczeniowej:  5812 Obciążenie rachunku";"";"";"";"Transakcja kartą debetową z CashBack";-51,35;"PLN";"8043,67"
