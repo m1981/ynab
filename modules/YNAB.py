@@ -3,8 +3,7 @@ __author__ = 'Michal'
 import datetime
 import os
 import sys
-import re
-from backports import csv
+import csv
 import io
 from unittest import TestCase
 
@@ -87,7 +86,7 @@ class AbstractRorConverter(object):
         self.input_file = alior_file
 
     def getStr(self):
-        return u'\n'.join(map(unicode, self.list)) + u'\n'
+        return u'\n'.join(map(str, self.list)) + u'\n'
 
     def _getValidChars(self, string):
         # return ''.join([i if ord(i) < 128 else '.' for i in string])
@@ -103,9 +102,9 @@ class AbstractRorConverter(object):
         try:
              amount = float(amount)
         except ValueError as e:
-            print 'amount: >>%s<<' % amount
-            print 'row: %s' % row
-            print 'pos: %s' % self.FIELD_AMOUNT
+            print( 'amount: >>%s<<' % amount)
+            print( 'row: %s' % row)
+            print( 'pos: %s' % self.FIELD_AMOUNT)
         return amount
 
     def getAccountNumber(self, row):
@@ -124,7 +123,7 @@ class AbstractRorConverter(object):
                     entry = YnabEntry(date=date, payee=payee, category='', memo=memo, amount=self.getAmount(row), account=self.getAccountNumber(row))
                     self.list.append(entry)
                 except:
-                    print 'Error while parsing row: {}\n{}'.format(i+1, row)
+                    print( 'Error while parsing row: {}\n{}'.format(i+1, row))
                     raise
 
 class AliorNewRorConverter(AbstractRorConverter):
@@ -425,6 +424,6 @@ if __name__ == '__main__':
         of.write(res)
 
 
-    print 'Success!'
-    print 'Press enter to exit...'
+    print('Success!')
+    print('Press enter to exit...')
     sys.stdin.readline()
