@@ -135,7 +135,7 @@ class AliorNewRorConverter(AbstractRorConverter):
         self.FIELD_DATE = 0
         self.FIELD_PAYEE = 2
         self.FIELD_PAYEE_TO = 3
-        self.FIELD_AMOUNT = 5
+        self.FIELD_AMOUNT = 7
         self.FIELD_MEMO1 = 4
         self.FIELD_ACCOUNT_NUMBER=8
 
@@ -172,7 +172,7 @@ class AliorNewCardConverter(AbstractRorConverter):
         self.FIELD_DELIMITER = ';'
         self.FIELD_DATE = 0
         self.FIELD_PAYEE = 2
-        self.FIELD_AMOUNT = 5
+        self.FIELD_AMOUNT = 7
         self.FIELD_MEMO1 = 4
         self.FIELD_ACCOUNT_NUMBER=0
 
